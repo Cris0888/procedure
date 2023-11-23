@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/crg">
+        <input type="text" name="busque">
+        <button type="submit">enviar</button>
+    </form>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">CEDULA</th>
+            <th scope="col">RESERVA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            {%for resultado in dato%}
+            <th scope="row">1</th>
+            <td>{resultado[0]}</td>
+            <td>resultado[1]</td>
+            <td>{resultado[2]}</td>
+            {%endfor%}
+        </tbody>
+      </table>
+      
+</body>
+</html>
